@@ -1,0 +1,10 @@
+HISTSIZE=130000 HISTFILESIZE=-1
+
+#vim shorcuts
+bind -m vi-insert "\C-l.":clear-screen
+bind '"jk":vi-movement-mode'
+
+#handle tabs
+set tabstop=4
+set shiftwidth=4
+set expandtab
