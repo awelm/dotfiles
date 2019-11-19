@@ -1,6 +1,10 @@
 HISTSIZE=130000 HISTFILESIZE=-1
 
 #vim shorcuts
+set -o vi
+set show-mode-in-prompt on
+set vi-cmd-mode-string "\1\e[2 q\2"
+set vi-ins-mode-string "\1\e[6 q\2"
 bind -m vi-insert "\C-l.":clear-screen
 bind '"jk":vi-movement-mode'
 
@@ -8,3 +12,12 @@ bind '"jk":vi-movement-mode'
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+#git aliases
+alias st="git status"
+alias gd="git diff"
+alias gp="git pull"
+alias gl="git log"
+alias gb="git branch"
+alias gs="git show"
+alias stree="open -a SourceTree ."
